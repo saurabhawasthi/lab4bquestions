@@ -1,0 +1,38 @@
+# lab4bquestions13
+#include <iostream.h> 
+
+int rec_array(int array[], int size) 
+{ 
+
+if (size==0)
+return 0;
+
+else 
+{
+return array, rec_array(array-1);
+size--;
+}
+} 
+
+void main() 
+{ 
+int size, i; 
+
+cout << "Please enter Array size: "; 
+cin >> size; 
+
+int array['size']; 
+
+cout << "Please enter array elements: "; 
+
+for (i=0 ; i<size ; i++) 
+{ 
+cin >> array[i]; 
+} 
+
+cout <<"After the call to the recursive function, the array prints as: "<<endl;
+
+cout <<rec_array(array,size)<<endl;
+} 
+
+ 
